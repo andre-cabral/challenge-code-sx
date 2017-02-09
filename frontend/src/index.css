@@ -1,0 +1,265 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font: 400 100% "Open Sans", sans-serif; }
+
+.container-root {
+  display: flex; }
+
+.first-block {
+  background-color: #49c5b1;
+  float: left;
+  width: 46.35417%;
+  color: #fff;
+  align-items: stretch; }
+
+.first-block-internal {
+  float: right;
+  width: 58.42697%;
+  min-width: 320px;
+  margin-top: 4em;
+  margin-right: 2.24719%; }
+
+.second-block {
+  background-color: #fff;
+  float: right;
+  width: 53.64583%;
+  color: #7d7d7d;
+  align-items: stretch; }
+
+.second-block-internal {
+  float: left;
+  width: 57.28155%;
+  min-width: 320px;
+  margin-top: 4em;
+  margin-left: 5.33981%; }
+
+.main-photo {
+  -webkit-border-radius: 1.6em 0 1.6em 0;
+  -moz-border-radius: 1.6em 0 1.6em 0;
+  -ms-border-radius: 1.6em 0 1.6em 0;
+  border-radius: 1.6em 0 1.6em 0;
+  display: block;
+  width: 13.8em;
+  height: 13.8em;
+  margin: 0 auto 1em; }
+
+.main-title {
+  font: 300 2.3em "Open Sans", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0.1em; }
+
+.main-subtitle {
+  font: 400 1.5em "Open Sans", sans-serif;
+  text-align: center; }
+
+.section-content {
+  margin-bottom: 2.5em;
+  overflow: hidden; }
+
+.section-title-container {
+  clear: both;
+  display: flex;
+  margin-bottom: 1em; }
+
+.section-title-icon {
+  width: 4em;
+  height: 4em;
+  float: left;
+  background-color: #fff;
+  -webkit-border-radius: 0.4em 0 0.4em 0;
+  -moz-border-radius: 0.4em 0 0.4em 0;
+  -ms-border-radius: 0.4em 0 0.4em 0;
+  border-radius: 0.4em 0 0.4em 0;
+  background: url(/icons-1.png);
+  background-size: 4em;
+  background-repeat: no-repeat; }
+
+.first-block .section-title-icon {
+  background-color: #fff; }
+
+.second-block .section-title-icon {
+  background: url(/icons-2.png);
+  background-color: #49c5b1;
+  background-size: 4em; }
+
+.section-title-icon.profile {
+  background-position: 0.2em -0.1em; }
+
+.section-title-icon.objective {
+  background-position: 0.1em -17.3em; }
+
+.section-title-icon.personal-skills {
+  background-position: 0.1em -34.9em; }
+
+.section-title-icon.contact {
+  background-position: 0.1em -51.7em; }
+
+.section-title-icon.education {
+  background-position: 0.1em -0.3em; }
+
+.section-title-icon.experience-professional {
+  background-position: 0.1em -21.5em; }
+
+.section-title-icon.professional-skill {
+  background-position: 0 -42.7em; }
+
+.section-title-icon.award {
+  background-position: 0 -56.2em; }
+
+.section-title {
+  font: 300 1.8em "Open Sans", sans-serif;
+  text-transform: uppercase;
+  float: left;
+  margin-left: 4.72441%;
+  margin-top: 0.4em; }
+
+.second-block .section-title {
+  color: #49c5b1; }
+
+.site-text {
+  font: 400 1.1em "Open Sans", sans-serif;
+  text-align: justify; }
+
+.skill-list-item {
+  clear: both;
+  overflow: hidden;
+  margin-bottom: 0.7em; }
+
+.skill-name {
+  font: 400 1.1em "Open Sans", sans-serif;
+  text-transform: uppercase;
+  float: left; }
+
+.skill-level {
+  background-color: #fff;
+  width: 44.09449%;
+  height: 1em;
+  float: right; }
+
+.skill-level-filled {
+  background-color: #a6a5a5;
+  height: 1em; }
+
+.second-block .skill-level {
+  background-color: #a6a5a5; }
+
+.second-block .skill-level-filled {
+  background-color: #49C5B1; }
+
+.contact-list-icon {
+  width: 1.1em;
+  height: 1.1em;
+  margin-top: 0.1em;
+  margin-right: 1.1em;
+  float: left;
+  overflow: hidden;
+  background: url(/contact-icons.png);
+  background-size: 1.1em; }
+
+.contact-list-icon.address {
+  background-position: 0 0; }
+
+.contact-list-icon.tel {
+  background-position: 0 -2em; }
+
+.contact-list-icon.email {
+  background-position: 0 -3em; }
+
+.contact-list-icon.webSite {
+  background-position: 0 -4em; }
+
+.experience-list-item {
+  margin-bottom: 1em;
+  overflow: hidden; }
+
+.experience-date {
+  font-size: 0.8em;
+  color: #636363;
+  width: 5em;
+  height: 10em;
+  display: block;
+  float: left;
+  text-align: center;
+  margin-right: 5.17241%; }
+
+.experience-title {
+  font-size: 1.1em;
+  font-weight: 700;
+  color: #000100; }
+
+.experience-subtitle {
+  font-size: 1.1em;
+  color: #4d4d4d;
+  margin-bottom: 0.3em; }
+
+@media (max-width: 840px) {
+  .container-root {
+    display: block; }
+
+  .first-block {
+    width: 100%; }
+
+  .first-block-internal {
+    width: 80%;
+    min-width: 0;
+    margin: 4em auto 0;
+    float: none; }
+
+  .second-block {
+    width: 100%; }
+
+  .second-block-internal {
+    width: 80%;
+    min-width: 0;
+    margin: 4em auto 0;
+    float: none; } }
+
+/*# sourceMappingURL=index.css.map */

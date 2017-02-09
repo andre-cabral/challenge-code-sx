@@ -1,0 +1,299 @@
+@import 'reset';
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+
+
+$internal-block-margin-top : 4em;
+
+$internal-block-size-media-query : 80%;
+$internal-block-margin-media-query : 4em auto 0;
+
+$main-photo-size: 13.8em;
+
+
+$font-stack: 'Open Sans', sans-serif;
+
+$font-light: 300;
+$font-regular: 400;
+$font-bold: 700;
+
+$font-size-main-title: 2.3em;
+$font-size-main-subtitle: 1.5em;
+
+$font-size-title: 1.8em;
+$font-size-text: 1.1em;
+$font-size-experience-date: 0.8em;
+
+$primary-background-color: #49c5b1;
+$secondary-background-color: #fff;
+
+$primary-title-icon-color: #fff;
+$secondary-title-icon-color: #49c5b1;
+
+$title-icon-size: 4em;
+
+$primary-title-color: #fff;
+$secondary-title-color: #49c5b1;
+
+$primary-text-color: #fff;
+$secondary-text-color: #7d7d7d;
+
+$primary-skill-color: #fff;
+$secondary-skill-color: #a6a5a5;
+
+$primary-skill-filled-color: #a6a5a5;
+$secondary-skill-filled-color: #49C5B1;
+
+$contact-icon-size: 1.1em;
+
+$secondary-experience-date-color: #636363;
+$secondary-experience-title-color: #000100;
+$secondary-experience-subtitle-color: #4d4d4d;
+
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius 0 $radius 0;
+     -moz-border-radius: $radius 0 $radius 0;
+      -ms-border-radius: $radius 0 $radius 0;
+          border-radius: $radius 0 $radius 0;
+}
+
+
+body {
+  font: $font-regular 100% $font-stack;
+  
+}
+
+.container-root{
+	display:flex;
+}
+
+.first-block{
+	background-color: $primary-background-color;
+	float: left;
+	width: 890px / 1920px * 100%;
+	color: $primary-text-color;
+	align-items: stretch;
+}
+
+.first-block-internal{
+	float:right;
+	width: 520px / 890px * 100%;
+	min-width: 320px;
+	margin-top: $internal-block-margin-top;
+	margin-right: 20px / 890px * 100%;
+}
+
+.second-block{
+	background-color: $secondary-background-color;
+	float: right;
+	width: 1030px / 1920px * 100%;
+	color: $secondary-text-color;
+	align-items: stretch;
+}
+
+.second-block-internal{
+	float:left;
+	width: 590px / 1030px * 100%;
+	min-width: 320px;
+	margin-top: $internal-block-margin-top;
+	margin-left: 55px / 1030px * 100%;
+}
+
+.main-photo { 
+	@include border-radius(1.6em);
+	display:block;
+	width:$main-photo-size;
+	height:$main-photo-size;
+	margin:0 auto 1em;
+}
+
+.main-title{
+	font: $font-light $font-size-main-title $font-stack;
+	text-transform:uppercase;
+	text-align:center;
+	margin-bottom:0.1em;
+}
+
+.main-subtitle{
+	font: $font-regular $font-size-main-subtitle $font-stack;
+	text-align:center;
+}
+
+.section-content{
+	margin-bottom:2.5em;
+	overflow:hidden;
+}
+
+.section-title-container{
+	clear:both;
+	display:flex;
+	margin-bottom:1em;
+}
+
+.section-title-icon{
+	width: $title-icon-size;
+	height: $title-icon-size;
+	float:left;
+	background-color: $primary-title-icon-color;
+	@include border-radius(0.4em);
+	background: url(/icons-1.png);
+    background-size: $title-icon-size;
+    background-repeat: no-repeat;
+}
+.first-block .section-title-icon{
+	background-color: $primary-title-icon-color;
+}
+.second-block .section-title-icon{
+	background: url(/icons-2.png);
+	background-color: $secondary-title-icon-color;
+	background-size: $title-icon-size;
+}
+
+.section-title-icon.profile{
+	background-position: 0.2em -0.1em;
+}
+.section-title-icon.objective{
+	background-position: 0.1em -17.3em;
+}
+.section-title-icon.personal-skills{
+	background-position: 0.1em -34.9em;
+}
+.section-title-icon.contact{
+	background-position: 0.1em -51.7em;
+}
+.section-title-icon.education{
+	background-position: 0.1em -0.3em;
+}
+.section-title-icon.experience-professional{
+	background-position: 0.1em -21.5em;
+}
+.section-title-icon.professional-skill{
+	background-position: 0 -42.7em;
+}
+.section-title-icon.award{
+	background-position: 0 -56.2em;
+}
+
+.section-title{
+	font: $font-light $font-size-title $font-stack;
+	text-transform:uppercase;
+	float:left;
+	margin-left: 30px/635px * 100%;
+	margin-top: $title-icon-size - 2*$font-size-title;
+}
+.second-block .section-title{
+	color: $secondary-title-color;
+}
+
+.site-text{
+	font: $font-regular $font-size-text $font-stack;
+	text-align: justify;
+}
+
+.skill-list-item{
+	clear:both;
+	overflow:hidden;
+	margin-bottom:0.7em;
+}
+
+.skill-name{
+	font: $font-regular $font-size-text $font-stack;
+	text-transform:uppercase;
+	float:left;
+}
+
+.skill-level{
+	background-color: $primary-skill-color;
+	width: 280px / 635px * 100%;
+	height:1em;
+	float:right;
+}
+.skill-level-filled{
+	background-color: $primary-skill-filled-color;
+	height:1em;
+}
+
+.second-block .skill-level{
+	background-color: $secondary-skill-color
+}
+.second-block .skill-level-filled{
+	background-color: $secondary-skill-filled-color;
+}
+
+.contact-list-icon{
+	width:$contact-icon-size;
+	height:$contact-icon-size;
+	margin-top: 0.1em;
+	margin-right:1.1em;
+	float:left;
+	overflow:hidden;
+	background:url(/contact-icons.png);
+	background-size:$contact-icon-size;
+}
+.contact-list-icon.address{
+	background-position:0 0;
+}
+.contact-list-icon.tel{
+	background-position:0 -2em;
+}
+.contact-list-icon.email{
+	background-position:0 -3em;
+}
+.contact-list-icon.webSite{
+	background-position:0 -4em;
+}
+
+.experience-list-item{
+	margin-bottom:1em;
+	overflow:hidden;
+}
+.experience-date{
+	font-size: $font-size-experience-date;
+	color: $secondary-experience-date-color;
+	width:5em;
+	height:10em;
+	display:block;
+	float:left;
+	text-align:center;
+	margin-right: 30px/580px * 100%;
+}
+
+.experience-title{
+	font-size: $font-size-text;
+	font-weight: $font-bold;
+	color: $secondary-experience-title-color;
+}
+.experience-subtitle{
+	font-size: $font-size-text;
+	color: $secondary-experience-subtitle-color;
+	margin-bottom:0.3em;
+}
+.experience-description.site-text{
+}
+
+
+@media (max-width: 840px) {
+	.container-root{
+		display:block;
+	}
+	.first-block{
+		width:100%;
+	}
+	.first-block-internal{
+		width:$internal-block-size-media-query;
+		min-width:0;
+		margin:$internal-block-margin-media-query;
+		float: none;
+	}
+
+	.second-block{
+		width:100%;
+	}
+	.second-block-internal{
+		width:$internal-block-size-media-query;
+		min-width:0;
+		margin:$internal-block-margin-media-query;
+		float: none;
+	}
+}
