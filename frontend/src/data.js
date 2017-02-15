@@ -1,8 +1,19 @@
+/*
 export function formatName(dataSite) {
   return dataSite.name;
 }
 
-export const dataSite = {
+export var dataSite;
+
+fetch('http://www.mocky.io/v2/57dfec211000009020598073').then(function(response) {
+	dataSite = response;
+}).catch(function(err) {
+	// Error
+});
+*/
+
+/*
+{
     "id": 1,
 	"name": "John xpto",
 	"thumb": "https://dev.bukkit.org/thumbman/avatars/21/973/300x300/Avatar-Personal-New-PURCHASED.png.-m0.png",
@@ -101,4 +112,4 @@ export const dataSite = {
 		"city": "San Franscisco",
 		"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
 	}
-};
+};*/
