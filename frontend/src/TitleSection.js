@@ -11,4 +11,9 @@ class SectionTitle extends Component {
   }
 }
 
+SectionTitle.propTypes = {
+  title: React.PropTypes.string.isRequired,
+  titleClass: React.PropTypes.string.isRequired
+}
+
 export default SectionTitle;

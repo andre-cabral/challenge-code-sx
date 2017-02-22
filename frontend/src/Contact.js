@@ -13,6 +13,40 @@ class SectionContactRow extends Component{
 }
 
 class SectionContact extends Component{
+  componentWillMount() {
+    //this.setState({loading: true});
+    console.log("will mount SectionContact")
+  }
+
+  componentDidMount() {
+    //this.setState({loading: true});
+    console.log("did mount SectionContact")
+  }
+
+//update events only happen when the PARENT component refreshes and call again the component that will execute willupdate, did update and receive props.
+  componentWillUpdate() {
+    //this.setState({loading: true});
+    console.log("will update SectionContact")
+  }
+
+  componentDidUpdate() {
+    //this.setState({loading: true});
+    console.log("did update SectionContact")
+  }
+
+  componentWillReceiveProps(nextProps) {
+    //this.setState({loading: true});
+    console.log("will receive props SectionContact");
+    if (nextProps.requestRefresh !== this.props.requestRefresh) {
+      console.log("nextProps SectionContact");
+    }
+  }
+  
+  componentWillUnmount() {
+    //this.setState({loading: true});
+    console.log("will unmount SectionContact")
+  }
+
   render() {
     var rows = [];
     this.props.contacts.forEach(function(contactItem) {
@@ -24,6 +58,12 @@ class SectionContact extends Component{
         <ul className="contact-list">{rows}</ul>
       </section>
     );  }
+}
+
+SectionContact.propTypes = {
+  title: React.PropTypes.string.isRequired,
+  contacts: React.PropTypes.arrayOf(React.PropTypes.object).isRequired,
+  titleClass: React.PropTypes.string.isRequired
 }
 
 export default SectionContact;

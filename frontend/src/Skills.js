@@ -29,4 +29,10 @@ class SectionSkills extends Component {
   }
 }
 
+SectionSkills.propTypes = {
+  title: React.PropTypes.string.isRequired,
+  skills: React.PropTypes.arrayOf(React.PropTypes.object).isRequired,
+  titleClass: React.PropTypes.string.isRequired
+}
+
 export default SectionSkills;

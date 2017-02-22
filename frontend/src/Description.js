@@ -12,4 +12,10 @@ class SectionDescription extends Component {
   }
 }
 
+SectionDescription.propTypes = {
+	title: React.PropTypes.string.isRequired,
+	text: React.PropTypes.string.isRequired,
+	titleClass: React.PropTypes.string.isRequired
+}
+
 export default SectionDescription;
